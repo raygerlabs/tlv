@@ -1,0 +1,12 @@
+*        text=auto
+
+*.cpp    text diff=cpp
+*.hpp    text diff=cpp
+
+*.json   text
+*.toml   text
+*.xml    text
+*.yaml   text
+
+*.pdf    lfs-file
+*.jpg    lfs-file

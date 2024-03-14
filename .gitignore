@@ -1,0 +1,16 @@
+**/.DS_Store
+**/.idea
+**/.cache
+**/.clangd
+**/.vs
+**/.vscode
+**/build
+*.swp
+*~
+*.orig
+*.rej
+*.pyc
+.*.sw?
+.sw?
+**/CMakeUserPresets.json
+**/ConanPresets.json

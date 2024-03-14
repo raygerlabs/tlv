@@ -1,0 +1,30 @@
+#ifndef M_TEST_CONFIG_HPP
+#define M_TEST_CONFIG_HPP
+
+#pragma once
+
+#include <filesystem>
+
+namespace tlv
+{
+namespace testing
+{
+inline std::filesystem::path getProjectRootPath()
+{
+  return std::filesystem::path("${CMAKE_SOURCE_DIR}");
+}
+
+inline std::filesystem::path getResourcePath()
+{
+  return getProjectRootPath() / "resources";
+}
+
+inline std::filesystem::path getBuildPath()
+{
+  return std::filesystem::path("${CMAKE_BINARY_DIR}");
+}
+
+}  // namespace testing
+}  // namespace tlv
+
+#endif
